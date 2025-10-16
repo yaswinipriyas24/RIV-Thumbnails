@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIV Thumbnails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header with Logo -->
+  <header>
+    <img src="images/logo.jpg" alt="RIV Thumbnails Logo" class="logo">
+    <h1>RIV Thumbnails</h1>
+    <p>Custom thumbnails for small content creators</p>
+    <a href="#contact" class="cta-btn">Work With Us</a>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About RIV Thumbnails</h2>
+    <div class="about-text">
+      <p>At <strong>RIV Thumbnails</strong>, we help small content creators stand out with eye-catching thumbnails that attract more clicks and views. Our mission is to make your videos look professional without breaking the bank.</p>
+      <p>We work closely with creators to understand their style, niche, and audience, creating custom thumbnails that fit each video perfectly. Our pricing model is simple: pay a small upfront fee for your design, and we also take a 2% share of the video’s revenue once it performs.</p>
+      <p>With RIV Thumbnails, even beginners can make their content look polished and professional, helping their channels grow faster.</p>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Share Your Video Details</h3>
+        <p>Tell us about your video and style, so we can design the perfect thumbnail.</p>
+      </div>
+      <div class="step">
+        <h3>2. Pay for Your Design</h3>
+        <p>Pay a small upfront fee of ₹49 to get your custom thumbnail created quickly.</p>
+      </div>
+      <div class="step">
+        <h3>3. 2% Revenue Share</h3>
+        <p>We take a small 2% of the video’s revenue once it performs.</p>
+      </div>
+      <div class="step">
+        <h3>4. Get Your Thumbnail</h3>
+        <p>Receive your custom thumbnail ready to upload and grow your channel!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <img src="images/2.jpg" alt="Thumbnail 1">
+      <img src="images/3.jpg" alt="Thumbnail 2">
+      <img src="images/4.jpg" alt="Thumbnail 3">
+      <img src="images/5.jpg" alt="Thumbnail 4">
+      <img src="images/6.jpg" alt="Thumbnail 5">
+      <img src="images/7.jpg" alt="Thumbnail 6">
+      <img src="images/8.jpg" alt="Thumbnail 7">
+      <img src="images/9.jpg" alt="Thumbnail 8">
+      <img src="images/10.jpg" alt="Thumbnail 9">
+      <img src="images/11.jpg" alt="Thumbnail 10">
+      <img src="images/12.jpg" alt="Thumbnail 11">
+      <img src="images/13.jpg" alt="Thumbnail 12">
+      <img src="images/14.jpg" alt="Thumbnail 13">
+      <img src="images/15.jpg" alt="Thumbnail 14">
+      <img src="images/16.jpg" alt="Thumbnail 15">
+    </div>
+  </section>
+
+  <!-- Portfolio Lightbox -->
+  <div id="lightbox">
+    <span id="lightbox-close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Full Image">
+  </div>
+
+  <!-- Payment Section -->
+  <section id="pricing">
+    <h2>Start Your Project</h2>
+    <a id="payBtn" class="buy-btn">Pay Now</a>
+
+    <!-- QR code for desktop users -->
+    <div id="qrContainer" style="display:none; margin-top:1rem;">
+      <p>Scan this QR code using any UPI app to pay ₹49</p>
+      <img id="upiQR" src="images/upi-qr.jpg" alt="UPI QR Code" width="200" height="200">
+    </div>
+  </section>
+
+  <!-- UPI Lightbox Overlay -->
+  <div id="upiLightbox">
+    <div id="upiBox">
+      <span id="closeLightbox">&times;</span>
+      <h3>Pay ₹49 via UPI</h3>
+      <p>Scan this QR code using any UPI app<br>or tap the button below if you’re on mobile.</p>
+      <img src="images/upi-qr.jpg" alt="UPI QR Code" width="200" height="200">
+      <br>
+      <a id="upiPayBtn" class="buy-btn">Open in PhonePe / GPay</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <!-- Hidden input to track payment -->
+      <input type="hidden" id="paymentDone" value="false">
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RIV Thumbnails</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
