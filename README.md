@@ -85,7 +85,7 @@ riv-thumbnails/
 
 1. *Clone the repository:*
 ```bash
-git clone <r>
+git clone <https://github.com/yaswinipriyas24/RIV-Thumbnails.git>
 ```
 2. *Open locally:*
    ```
@@ -131,4 +131,5 @@ const upiLink = "upi://pay?pa=YOUR_UPI_ID&pn=RIV%20Thumbnails&am=49&cu=INR";
 
 *RIV Thumbnails Team*  
 © 2025
+
 
